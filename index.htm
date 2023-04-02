@@ -1,0 +1,334 @@
+<!--Force IE6 into quirks mode with this comment tag-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8" xml:lang="UTF-8">
+<head>
+<meta name="google-site-verification" content="jjy60YgmdAh8TsD5oXF-Jhr_tYpUQtkxlRKLwM6Uydg" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>文化與創意藝術學系 | Department of Cultural and Creative Arts</title>
+
+<link rel="stylesheet" type="text/css" href="sdmenu/cca.css" />
+
+<style type="text/css" media="screen">
+textarea.codecontainer{
+height: 500px;
+}
+</style>
+
+<script language="Javascript" type="text/javascript" src="ecms_system.js"></script>
+</style>
+
+
+<script type="text/javascript">
+var bustcachevar=1 //bust potential caching of external pages after initial request? (1=yes, 0=no)
+var loadedobjects=""
+var rootdomain="http://"+window.location.hostname
+var bustcacheparameter=""
+
+function ajaxpage(url, containerid){
+var page_request = false
+if (window.XMLHttpRequest) // if Mozilla, Safari etc
+page_request = new XMLHttpRequest()
+else if (window.ActiveXObject){ // if IE
+try {
+page_request = new ActiveXObject("Msxml2.XMLHTTP")
+} 
+catch (e){
+try{
+page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+catch (e){}
+}
+}
+else
+return false
+page_request.onreadystatechange=function(){
+loadpage(page_request, containerid)
+}
+if (bustcachevar) //if bust caching of external page
+bustcacheparameter=(url.indexOf("?")!=-1)? "&"+new Date().getTime() : "?"+new Date().getTime()
+page_request.open('GET', url+bustcacheparameter, true)
+page_request.send(null)
+}
+
+function loadpage(page_request, containerid){
+if (page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1))
+document.getElementById(containerid).innerHTML=page_request.responseText
+}
+
+function loadobjs(){
+if (!document.getElementById)
+return
+for (i=0; i<arguments.length; i++){
+var file=arguments[i]
+var fileref=""
+if (loadedobjects.indexOf(file)==-1){ //Check to see if this object has not already been added to page before proceeding
+if (file.indexOf(".js")!=-1){ //If object is a js file
+fileref=document.createElement('script')
+fileref.setAttribute("type","text/javascript");
+fileref.setAttribute("src", file);
+}
+else if (file.indexOf(".css")!=-1){ //If object is a css file
+fileref=document.createElement("link")
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", file);
+}
+}
+if (fileref!=""){
+document.getElementsByTagName("head").item(0).appendChild(fileref)
+loadedobjects+=file+" " //Remember this object as being already added to page
+}
+}
+}
+
+</script>
+
+<script type="text/javascript" src="js/sdmenu.js">
+</script>
+
+<script type="text/javascript" src="js/tablesort.js">
+</script>
+	
+<script type="text/javascript">
+	// <![CDATA[
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+	};
+	// ]]>
+		
+</script>
+
+</head>
+<body>
+
+  
+
+
+
+<div id="framecontentLeft">
+<div id="elink"></div>
+<img src="images/top_left.jpg" alt="CCA" width="200" height="210" border="0" usemap="#Map2"/>
+<map name="Map2" id="Map2">
+  <area shape="rect" coords="26,39,202,120" href="http://www.ied.edu.hk" target="_blank" alt="HKIEd" />
+</map>
+<td width="50%" valign="center">
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+startList = function() {
+
+if (document.getElementById) {
+	navRoot = document.getElementById("nav");
+	for (i=0; i<navRoot.childNodes.length; i++) {
+		node = navRoot.childNodes[i];
+		if (node.nodeName=="LI") {
+		node.onclick=function() {
+		
+this.className = (this.className == "on") ? "off" : "on";
+
+			}
+   		}
+  	}
+ }
+}
+window.onload=startList;
+//--><!]]>
+</script>
+<style type="text/css">
+
+
+body {
+font: normal 100% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 12px;
+display: block;
+}
+
+
+* html body{
+	font-size:xx-small;	
+	f\ont-size:x-small;
+	background: url(title_s.gif) repeat-x ;
+	
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width:198px
+	background: url(title_s.gif) repeat-x ;
+}
+
+ul li {
+	position: relative;
+	width:198px;
+	border: 0px solid #ccc;
+	background: url(title_s.gif) repeat-x ;
+}
+/* keep folowing styles together..........................*/
+* html ul ul {
+	margin-left:-16px;/* ie5 fix */
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+/* 		background: url(title.gif) repeat-x ; */
+
+}	
+* html ul li {float:left;/* hide float from ie5*/}
+* html ul ul {
+	width:150px;	
+	width:148px;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	background: url(title_s.gif) repeat-x ;
+	
+}
+* html ul ul {margin-left:0;/* hide margin from ie5*/}
+
+/* keep above styles together .............*/
+
+li ul {
+	position: relative;
+	display:none;
+
+}
+li ul li {
+	width:198px;
+	border-left:15px solid grey
+}
+
+/* Styles for Menu Items */
+ul li a {
+/* text-shadow: 1px 1px maroon; */
+
+	display:block;
+	background: url(title.gif) repeat-x ;
+	text-decoration: none;
+	color: #6a6a6a;
+/* 	background: #ffffcc; */ /* IE6 Bug */
+	line-height:2em;
+	height:25px;	
+	padding:0 5px
+}
+li li a {background: url(title.gif) repeat-x ;}
+
+/* set dropdown to default */
+li:hover li a, li.over li a {
+    color: #FFFFFF;
+   	height:25px;	
+background: url(title_s.gif) repeat-x ;}
+
+/* this sets all hovered lists to red */
+li a:hover,
+li:hover a, li.over a,
+li:hover li a:hover, li.over li a:hover {
+   color: #fff;
+   background-color: red;
+   background: url(title_r.gif) repeat-x ;
+}
+
+li ul li  { background: url(title_s.gif) repeat-x ; } /* Sub Menu Styles */
+ li.on ul { display:block;
+ background: url(title_s.gif) repeat-x ;}
+
+ 
+   } /* The magic */
+li.off ul{display:none
+background: url(title_s.gif) repeat-x ;}
+}
+</style>
+</head>
+<body>
+<ul id="nav">
+  <li><a href="ccanews.pdf" target="_blank">最新消息 News</a></li>
+  <li><a href="welcome.htm" target="middle">歡迎 Welcome</a></li>
+  <li><a href="staff.htm" target="middle">職員 Staff</a></li>
+  <li><a href="honprof.htm" target="middle">榮譽教授 Hon. Professors</a></li>
+  <li><a href="honair.htm" target="middle"> 榮譽駐校藝術家</a>
+    <ul>
+      <li><a href="honair.htm" target="middle">Hon. Artists-in-Residence</a></li>
+    </ul>
+  </li>
+  <li><a href="programe.htm" target="middle">課程 Teaching/Programmes</a></li>
+  <li><a href="studentsactivities.htm" target="middle">學生活動 Student Activities</a></li>
+  <li><a href="#">研究 Research&Projects &gt;</a> 
+  <ul>
+  <li><a href="http://www.ied.edu.hk/cca/apjae/index.htm" target="_blank">Journal - APJAE</a></li>
+  <li><a href="research.htm#irg" target="middle">Research Projects</a></li>
+  </ul>
+  
+  <li><a href="publication.htm" target="middle">Publications & Other Output</a></li>
+    <li><a href="#">Knowledge Transfer &gt;</a> 
+    <ul>
+  <li><a href="none.htm" target="middle">Services to EDB</a></li>
+  <li><a href="none.htm" target="middle">Services to the Community</a></li>
+  </ul>
+   
+   <li><a href="project.htm" target="middle">計劃 Projects</a></li>
+    <li><a href="#">設施 Facilities &gt;</a> 
+<ul>
+<li><a href="facilities.htm#mu" target="middle">Music</a></li>
+<li><a href="facilities.htm#va" target="middle">Visual arts</a></li>
+</ul>
+  
+  <li><a href="events.htm" target="middle">項目 Events</a></li>
+  <li><a href="http://www.ied.edu.hk/cass/" target="_blank">社區體藝學堂 CASS</a></li>
+  <li><a href="http://www.ied.edu.hk/vaecd/" target="_blank">藝展計劃 VAECD</a></li>
+  <li><a href="alumni.htm" target="middle">校友 Alumni Activities</a></li>
+  <li><a href="../survey/Homerev1.html" target="_blank">網上問卷調查 Web Survey</a></li>
+  <li><a href="contact.htm" target="middle">聯絡 Contact</a></li>
+  
+<li><a href="#">短片 CCA video &gt;</a> 
+<ul>
+<li><a href="http://www.ied.edu.hk/cca/video/cca_eng_version.wmv" target="middle">Music Eng</a></li>
+<li><a href="http://www.ied.edu.hk/cca/video/cca_chi_version.wmv" target="middle">Music 中文</a></li>
+<li><a href="video_va_chi.htm" target="middle">Visual arts 中文</a></li>
+<li><a href="va_room.htm" target="middle">Visual arts RM booking</a></li>
+</ul>
+
+<!--  <li><a href="https://artiviva.wordpress.com" target="middle">artiviva</a></li> -->
+
+
+  
+</ul>
+
+</td>
+</div>
+
+
+
+
+
+
+<div id="framecontentTop">
+<img src="images/top_right.jpg" alt="CCA" width="754" height="210" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="1,55,16,126" href="http://www.ied.edu.hk" target="_blank" /><area shape="rect" coords="1,55,16,126" href="http://www.ied.edu.hk" target="_blank" /><area shape="rect" coords="1,55,16,126" href="http://www.ied.edu.hk" target="_blank" /><area shape="rect" coords="1,55,16,126" href="http://www.ied.edu.hk" target="_blank" />
+  <area shape="rect" coords="1,55,16,126" href="http://www.ied.edu.hk" target="_blank" />
+  <area shape="rect" coords="77,8,457,48" href="http://www.ied.edu.hk/fas/" target="_blank" alt="FAS" />
+</map>
+</div>
+
+
+
+<div id="framecontentBottom">
+<div class="innertube">
+<la> <a href="index.htm" target="_top">Welcome</a>
+<a href="sitmap.htm">Site Map</a>
+Copyright © 2009 HKIEd. All rights reserved.</la>
+<a name="fb_share" type="icon_link" share_url="http://www.ied.edu.hk/cca/cca" href="http://www.facebook.com/sharer.php">share cca</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+</div>
+
+<div id="maincontent">
+<iframe name="middle" src="welcome.htm" frameborder="0" width="100%" height="100%" scrolling="auto" style="overflow-x:auto" align="left">
+</iframe>
+</div>
+
+
+
+
+</body>
+</html>

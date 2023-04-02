@@ -1,0 +1,156 @@
+<!--Force IE6 into quirks mode with this comment tag-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8" xml:lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>文化與創意藝術學系 | Department of Cultural and Creative Arts</title>
+
+<link rel="stylesheet" type="text/css" href="sdmenu/cca.css" />
+
+<style type="text/css" media="screen">
+textarea.codecontainer{
+height: 500px;
+}
+</style>
+
+<script language="Javascript" type="text/javascript" src="ecms_system.js"></script>
+<!--
+<style type="text/css">
+<!--
+	.bullet { font-weight: bold; }
+	.collapsed { background-color: #CCCCCC; font-weight: bold; }
+	.expanded { font-weight: bold; }
+	LI.bullet, LI.expanded { font-weight: bold; list-style-type: circle; margin-left: -20px; }
+	LI.expanded { list-style-image: url(expanded.gif);}
+	LI.item { list-style-image: url(bullet.gif);}
+-->
+</style>
+
+
+<script type="text/javascript">
+var bustcachevar=1 //bust potential caching of external pages after initial request? (1=yes, 0=no)
+var loadedobjects=""
+var rootdomain="http://"+window.location.hostname
+var bustcacheparameter=""
+
+function ajaxpage(url, containerid){
+var page_request = false
+if (window.XMLHttpRequest) // if Mozilla, Safari etc
+page_request = new XMLHttpRequest()
+else if (window.ActiveXObject){ // if IE
+try {
+page_request = new ActiveXObject("Msxml2.XMLHTTP")
+} 
+catch (e){
+try{
+page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+catch (e){}
+}
+}
+else
+return false
+page_request.onreadystatechange=function(){
+loadpage(page_request, containerid)
+}
+if (bustcachevar) //if bust caching of external page
+bustcacheparameter=(url.indexOf("?")!=-1)? "&"+new Date().getTime() : "?"+new Date().getTime()
+page_request.open('GET', url+bustcacheparameter, true)
+page_request.send(null)
+}
+
+function loadpage(page_request, containerid){
+if (page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1))
+document.getElementById(containerid).innerHTML=page_request.responseText
+}
+
+function loadobjs(){
+if (!document.getElementById)
+return
+for (i=0; i<arguments.length; i++){
+var file=arguments[i]
+var fileref=""
+if (loadedobjects.indexOf(file)==-1){ //Check to see if this object has not already been added to page before proceeding
+if (file.indexOf(".js")!=-1){ //If object is a js file
+fileref=document.createElement('script')
+fileref.setAttribute("type","text/javascript");
+fileref.setAttribute("src", file);
+}
+else if (file.indexOf(".css")!=-1){ //If object is a css file
+fileref=document.createElement("link")
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", file);
+}
+}
+if (fileref!=""){
+document.getElementsByTagName("head").item(0).appendChild(fileref)
+loadedobjects+=file+" " //Remember this object as being already added to page
+}
+}
+}
+
+</script>
+
+<script type="text/javascript" src="js/sdmenu.js">
+</script>
+
+<script type="text/javascript" src="js/tablesort.js">
+</script>
+	
+<script type="text/javascript">
+	// <![CDATA[
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+	};
+	// ]]>
+		
+</script>
+
+</head>
+<body>
+
+  
+<div id="framecontentLeft">
+
+<div id="elink">
+<a href="http://www.ied.edu.hk/fas/" target="_blank">文理學院<br>Faculty of Arts and Sciences
+</a></div>
+
+
+<img src="images/top_left.jpg" alt="CCA" border="0"/>
+<td width="50%" valign="center">
+<script language="Javascript" type="text/javascript" src="ecms_config.js"></script>
+</td>
+</div>
+
+
+<div id="framecontentTop">
+<img src="images/top_right.jpg" alt="CCA" />
+</div>
+
+
+
+<div id="framecontentBottom">
+<div class="innertube">
+<la> <a href="index.htm" target="_top">Welcome</a>
+<a href="sitmap.htm">Site Map</a>
+Copyright © 2009 HKIEd. All rights reserved.</la>
+</div>
+</div>
+
+
+<div id="maincontent">
+<iframe name="middle" src="welcome.htm" frameborder="0" width="100%" height="100%" scrolling="yes" align="left">
+</iframe>
+</div>
+
+
+
+
+</body>
+</html>
